@@ -2,23 +2,7 @@ import unittest
 import network
 import main
 from main import sync_time
-#from main import read_settings
-#from main import read_key,find_secondary,connect_to_secondary,send_verbs
-
 class TestMicropythonCode(unittest.TestCase):
-
-    #def test_wlan_connection(self):
-        # Test WLAN connection
-        #self.assertTrue(network.WLAN(network.STA_IF).active(True))
-        
-    #def test_sync_time(self):
-        # Test time sync
-    #    self.assertTrue(sync_time())
-        
-    #def test_measure_temp(self):
-        # Test temperature sensor
-    #    temp = measure_temp()
-    #    self.assertTrue(isinstance(temp, float))
         
     def test_read_settings(self):
         print('Test read settings function\n')
