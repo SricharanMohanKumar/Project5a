@@ -54,32 +54,6 @@ class PKCS1Test(unittest.TestCase):
         with self.assertRaises(DecryptionError):
             decrypt(modified_ciphertext, private_key)
 
-"""
-def test_sign_verify_file(self):
-        (public_key, private_key) = key.newkeys(512)
-        message = b'This is a message to sign.'
-        hash_value = hashlib.sha256(message).digest()
-
-        # Sign the hash
-        signature = sign_hash(hash_value, private_key, 'SHA-256')
-
-        # Write message and signature to file
-        with open('testfile', 'wb') as f:
-            f.write(message)
-            f.write(signature)
-
-        # Verify the signature on file
-        with open('testfile', 'rb') as f:
-            verify(f, signature, public_key)
-def test_verify_fail(self):
-        (public_key, private_key) = key.newkeys(512)
-        message = b'This is a message to sign.'
-        signature = base64.b64decode('VxhZ4Pe+4GYaYn/PL5+yVhJNbUBrL9Mk0J0cMNFZ8WjHg+12loYBQI/Vtnv/d8W6fJd9kLRikzHz93q3mp8WQ==')
-
-        # Verify signature fails
-        with self.assertRaises(VerificationError):
-            verify(message, signature, public_key)"""
-
 
 if __name__ == '__main__':
     unittest.main()

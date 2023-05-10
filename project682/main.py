@@ -124,12 +124,10 @@ def main():
         elif int(opt) == 5:
             print('Running tests...')
             test_case = Micropython_Test.TestMicropythonCode()
-            # Call the test_wlan_connection() method
-            #test_case.test_connect_to_secondary()
-            test_case.test_read_settings()
-            test_case.test_read_key()
             test_case.test_find_secondary()
             test_case.test_send_verbs()
+            test_case.test_read_settings()
+            test_case.test_read_key()
             sys.exit()
         else:
             print('Invalid option. Please enter a number in the range [1-4]')
